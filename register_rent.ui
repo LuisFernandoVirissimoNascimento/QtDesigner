@@ -205,6 +205,27 @@ background-image: a;</string>
      <string>Wolf Dance</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="b_load_main">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
+    </property>
+    <property name="text">
+     <string>Menu Principal</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
