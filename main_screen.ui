@@ -35,7 +35,7 @@ background-position: center;</string>
     <string notr="true">background-color: rgba(255, 94, 0, 0);
 background-image: url('path/to/your/image.png');</string>
    </property>
-   <widget class="QPushButton" name="b_register">
+   <widget class="QPushButton" name="b_load_rent">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -114,7 +114,7 @@ background-image: a;</string>
      <string>________________________________________________________________________________________________________</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="b_register_2">
+   <widget class="QPushButton" name="b_load_register_user">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -135,7 +135,7 @@ background-image: a;</string>
      <string>Cadastrar Usuário</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="b_register_3">
+   <widget class="QPushButton" name="b_load_register_book">
     <property name="geometry">
      <rect>
       <x>30</x>
