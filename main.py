@@ -1,12 +1,13 @@
 import sys
+from services.biblioteca import biblioteca
 from PyQt6 import uic
 from PyQt6.QtWidgets import QApplication, QMainWindow
 from PyQt6.QtGui import QIcon
-login_file = "login_screen.ui"
-main_file = "main_screen.ui"
-rent_file = "register_rent.ui"
-user_file = "register_user.ui"
-book_file = "register_book.ui"
+login_file = "views/login_screen.ui"
+main_file = "views/main_screen.ui"
+rent_file = "views/register_rent.ui"
+user_file = "views/register_user.ui"
+book_file = "viewsregister_book.ui"
 
 
 
@@ -33,6 +34,7 @@ class MainWindow(QMainWindow):
         uic.load_ui.loadUi(user_file,self)
         self.b_wolf.clicked.connect(self.load_main)
         self.b_load_main.clicked.connect(self.load_main)
+        self.b_cadastrar.clicked.connect(biblioteca.cadastrar_usuario())
     def load_rent(self):
         uic.load_ui.loadUi(rent_file,self)
         self.b_wolf.clicked.connect(self.load_user)
