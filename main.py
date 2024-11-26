@@ -20,6 +20,7 @@ class MainWindow(QMainWindow):
     # This bit is the function to load and apply actions to a page. This will load the main page with uic.load and then take each button ( That you have to get manually btw ) to connect their clicked action to a function. The function can exist after this.
     def load_main(self):
         uic.load_ui.loadUi(main_file,self)
+        self.b_quit.clicked.connect(self.load_login)
         self.b_wolf.clicked.connect(self.load_book)
         self.b_load_rent.clicked.connect(self.load_rent)
         self.b_load_register_user.clicked.connect(self.load_user)
