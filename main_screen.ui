@@ -195,7 +195,7 @@ background-image: a;</string>
      <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
     </property>
     <property name="text">
-     <string>Wolf Dance</string>
+     <string>Sair</string>
     </property>
    </widget>
   </widget>
