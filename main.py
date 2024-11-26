@@ -15,7 +15,15 @@ class MainWindow(QMainWindow):
         self.batata = batata
         uic.load_ui.loadUi(main_file,self)
         self.setWindowIcon(QIcon("bg.ico"))
+        self.load_main()
+
+    # This bit is the function to load and apply actions to a page. This will load the main page with uic.load and then take each button ( That you have to get manually btw ) to connect their clicked action to a function. The function can exist after this.
+    def load_main(self):
+        uic.load_ui.loadUi(main_file,self)
         self.b_wolf.clicked.connect(self.load_book)
+        self.b_load_rent.clicked.connect(self.load_rent)
+        self.b_load_register_user.clicked.connect(self.load_user)
+        self.b_load_register_book.clicked.connect(self.load_book)
 
     def load_user(self):
         uic.load_ui.loadUi(user_file,self)
@@ -26,9 +34,6 @@ class MainWindow(QMainWindow):
     def load_book(self):
         uic.load_ui.loadUi(book_file,self)
         self.b_wolf.clicked.connect(self.load_rent)
-    def load_main(self):
-        uic.load_ui.loadUi(main_file,self)
-        self.b_wolf.clicked.connect(self.load_book)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
