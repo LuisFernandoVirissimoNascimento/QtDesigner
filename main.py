@@ -28,12 +28,15 @@ class MainWindow(QMainWindow):
     def load_user(self):
         uic.load_ui.loadUi(user_file,self)
         self.b_wolf.clicked.connect(self.load_main)
+        self.b_load_main.clicked.connect(self.load_main)
     def load_rent(self):
         uic.load_ui.loadUi(rent_file,self)
         self.b_wolf.clicked.connect(self.load_user)
+        self.b_load_main.clicked.connect(self.load_main)
     def load_book(self):
         uic.load_ui.loadUi(book_file,self)
         self.b_wolf.clicked.connect(self.load_rent)
+        self.b_load_main.clicked.connect(self.load_main)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
