@@ -19,23 +19,15 @@ class MainWindow(QMainWindow):
 
     def load_user(self):
         uic.load_ui.loadUi(user_file,self)
-        self.batata += 1;
-        print(self.batata)
         self.b_wolf.clicked.connect(self.load_main)
     def load_rent(self):
         uic.load_ui.loadUi(rent_file,self)
-        self.batata += 1;
-        print(self.batata)
         self.b_wolf.clicked.connect(self.load_user)
     def load_book(self):
         uic.load_ui.loadUi(book_file,self)
-        self.batata += 1;
-        print(self.batata)
         self.b_wolf.clicked.connect(self.load_rent)
     def load_main(self):
         uic.load_ui.loadUi(main_file,self)
-        self.batata += 1;
-        print(self.batata)
         self.b_wolf.clicked.connect(self.load_book)
 
 if __name__ == "__main__":
