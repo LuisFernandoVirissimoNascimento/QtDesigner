@@ -227,7 +227,7 @@ background-image: a;</string>
      <number>1</number>
     </property>
     <property name="text">
-     <string>Cadastrar Usuário</string>
+     <string>Cadastrar Uqsuário</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
