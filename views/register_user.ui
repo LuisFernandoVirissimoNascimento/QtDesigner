@@ -49,7 +49,7 @@ background-image: url('path/to/your/image.png');</string>
       <enum>QLayout::SetMaximumSize</enum>
      </property>
      <item row="0" column="1">
-      <widget class="QLabel" name="Title">
+      <widget class="QLabel" name="t_user_name">
        <property name="enabled">
         <bool>true</bool>
        </property>
@@ -63,14 +63,14 @@ background-image: url('path/to/your/image.png');</string>
       </widget>
      </item>
      <item row="11" column="1">
-      <widget class="QLineEdit" name="lineEdit_4">
+      <widget class="QLineEdit" name="i_user_cpf">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="t_user_email">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 94, 0, 0);
 background-image: none;</string>
@@ -81,7 +81,7 @@ background-image: none;</string>
       </widget>
      </item>
      <item row="10" column="1">
-      <widget class="QLabel" name="label_4">
+      <widget class="QLabel" name="t_user_cpf">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 94, 0, 0);
 background-image: none;</string>
@@ -92,14 +92,14 @@ background-image: none;</string>
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="i_user_name">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
       </widget>
      </item>
      <item row="7" column="1">
-      <widget class="QLabel" name="label_3">
+      <widget class="QLabel" name="t_user_password">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 94, 0, 0);
 background-image: none;</string>
@@ -110,14 +110,14 @@ background-image: none;</string>
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="i_user_email">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
       </widget>
      </item>
      <item row="8" column="1">
-      <widget class="QLineEdit" name="lineEdit_3">
+      <widget class="QLineEdit" name="i_user_password">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
@@ -227,7 +227,7 @@ background-image: a;</string>
      <number>1</number>
     </property>
     <property name="text">
-     <string>Cadastrar Usuário</string>
+     <string>Cadastrar Uqsuário</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -292,6 +292,19 @@ background-image: a;</string>
     </property>
     <property name="text">
      <string>Menu Principal</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>210</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RadioButton</string>
     </property>
    </widget>
   </widget>

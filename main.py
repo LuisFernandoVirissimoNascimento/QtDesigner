@@ -34,7 +34,7 @@ class MainWindow(QMainWindow):
         uic.load_ui.loadUi(user_file,self)
         self.b_wolf.clicked.connect(self.load_main)
         self.b_load_main.clicked.connect(self.load_main)
-        self.b_cadastrar.clicked.connect(biblioteca.cadastrar_usuario())
+        self.b_register.clicked.connect(lambda x: biblioteca.cadastrar_usuario(self.i_user_name.text()))
     def load_rent(self):
         uic.load_ui.loadUi(rent_file,self)
         self.b_wolf.clicked.connect(self.load_user)
