@@ -59,9 +59,9 @@ background-image: url('path/to/your/image.png');</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>235</x>
+      <x>210</x>
       <y>30</y>
-      <width>195</width>
+      <width>231</width>
       <height>31</height>
      </rect>
     </property>
@@ -89,7 +89,7 @@ background-image: a;</string>
      <number>1</number>
     </property>
     <property name="text">
-     <string>Bem-vindo</string>
+     <string>Bem-vindo a Tri-Dog</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
