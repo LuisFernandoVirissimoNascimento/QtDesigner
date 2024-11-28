@@ -1,12 +1,12 @@
 class user:
-    def __init__(self,id_usuario, nome, cpf, telefone) -> None:
-        self.id_usuario = id_usuario
+    def __init__(self, nome, cpf, telefone, email) -> None:
         self.nome = nome
         self.cpf = cpf
         self.telefone = telefone
+        self.email = email
 
     def create(self):
-        return f"insert into usuario(id_usuario, nome, cpf, telefone) value {self.id_usuario, self.nome, self.cpf, self.telefone};"
+        return f"insert into usuario(nome, cpf, telefone, email) value {self.nome, self.cpf, self.telefone, self.email};"
     
 
 user.__name__ = "user"
