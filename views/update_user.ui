@@ -259,7 +259,7 @@ background-image: none;</string>
      <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
     </property>
     <property name="text">
-     <string>Cadastrar</string>
+     <string>Atualizar</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
