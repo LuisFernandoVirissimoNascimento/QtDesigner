@@ -1,7 +1,7 @@
 import mysql.connector
 #        bd = Database("10.28.2.69","suporte","suporte","blibioteca")
 class database:
-    def __init__(self,):
+    def __init__(self):
         self.host = "10.28.2.69"
         self.user = "suporte"
         self.password = "suporte"
@@ -16,5 +16,11 @@ class database:
         )
         self.cursor = self.conexao.cursor()
 
-    def desconectar(self):
+    def desconnect(self):
         self.conexao.close()
+
+    def execute_command(self, command):
+        self.connect()
+        self.cursor.execute(command)
+        self.conexao.commit()
+        self.desconnect()

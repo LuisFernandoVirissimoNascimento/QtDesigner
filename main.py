@@ -34,7 +34,9 @@ class MainWindow(QMainWindow):
         uic.load_ui.loadUi(user_file,self)
         self.b_wolf.clicked.connect(self.load_main)
         self.b_load_main.clicked.connect(self.load_main)
-        self.b_register.clicked.connect(lambda : biblioteca.cadastrar_usuario(self.i_user_name.text())) # This takes the input for user name and gives it's text, neat!
+
+        self.b_register.clicked.connect(lambda : biblioteca.register_user(self.i_user_name.text(), self.i_user_cpf.text(), self.i_user_telefone.text(),self.i_user_email.text())) # This takes the input for user name and gives it's text, neat!
+        
     def load_rent(self):
         uic.load_ui.loadUi(rent_file,self)
         self.b_wolf.clicked.connect(self.load_user)
