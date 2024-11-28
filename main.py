@@ -7,6 +7,7 @@ login_file = "views/login_screen.ui"
 main_file = "views/main_screen.ui"
 rent_file = "views/register_rent.ui"
 user_file = "views/register_user.ui"
+update_user_file = "views/update_user.ui"
 book_file = "views/register_book.ui"
 
 
@@ -23,6 +24,7 @@ class MainWindow(QMainWindow):
         uic.load_ui.loadUi(main_file,self)
         self.b_quit.clicked.connect(self.load_login)
         self.b_wolf.clicked.connect(self.load_book)
+        self.b_load_update_user.clicked.connect(self.load_update_user)
         self.b_load_rent.clicked.connect(self.load_rent)
         self.b_load_register_user.clicked.connect(self.load_user)
         self.b_load_register_book.clicked.connect(self.load_book)
@@ -36,6 +38,14 @@ class MainWindow(QMainWindow):
         self.b_load_main.clicked.connect(self.load_main)
 
         self.b_register.clicked.connect(lambda : biblioteca.register_user(self.i_user_name.text(), self.i_user_cpf.text(), self.i_user_telefone.text(),self.i_user_email.text(),self.i_user_password.text(),self.i_user_confirm_password.text())) # This takes the input for user name and gives it's text, neat!
+
+
+    def load_update_user(self):
+        uic.load_ui.loadUi(update_user_file,self)
+        self.b_wolf.clicked.connect(self.load_main)
+        self.b_load_main.clicked.connect(self.load_main)        
+
+        self.b_register.clicked.connect(lambda : biblioteca.update_user(self.i_user_confirm_password.text(),self.i_user_name.text(), self.i_user_cpf.text(), self.i_user_telefone.text(),self.i_user_email.text(),self.i_user_password.text())) # This takes the input for user name and gives it's text, neat!
 
     def load_rent(self):
         uic.load_ui.loadUi(rent_file,self)

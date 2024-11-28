@@ -1,6 +1,7 @@
 from models.model_user import user
+from controllers.controller_user import controller_user
 from bd import database
-class controller_admin:
+class controller_admin(controller_user):
     @staticmethod
     def register_user(nome, cpf, telefone, email, senha):
         user_to_register = user(nome, cpf, telefone, email, senha)
