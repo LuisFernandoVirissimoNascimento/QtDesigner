@@ -39,7 +39,7 @@ background-image: url('path/to/your/image.png');</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>110</y>
+      <y>200</y>
       <width>601</width>
       <height>71</height>
      </rect>
@@ -118,7 +118,7 @@ background-image: a;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>200</y>
+      <y>290</y>
       <width>601</width>
       <height>71</height>
      </rect>
@@ -139,7 +139,7 @@ background-image: a;</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>290</y>
+      <y>380</y>
       <width>601</width>
       <height>71</height>
      </rect>
@@ -196,6 +196,27 @@ background-image: a;</string>
     </property>
     <property name="text">
      <string>Sair</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_load_update_user">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>601</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
+    </property>
+    <property name="text">
+     <string>Atualizar Usuário</string>
     </property>
    </widget>
   </widget>
