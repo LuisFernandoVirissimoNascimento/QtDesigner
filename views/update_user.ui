@@ -241,7 +241,7 @@ background-image: none;</string>
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="b_register">
+   <widget class="QPushButton" name="b_update">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -362,7 +362,7 @@ background-image: a;</string>
      <string>Menu Principal</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="b_register_2">
+   <widget class="QPushButton" name="b_delete">
     <property name="geometry">
      <rect>
       <x>450</x>
