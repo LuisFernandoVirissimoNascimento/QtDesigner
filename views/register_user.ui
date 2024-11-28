@@ -48,6 +48,13 @@ background-image: url('path/to/your/image.png');</string>
      <property name="sizeConstraint">
       <enum>QLayout::SetMaximumSize</enum>
      </property>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="i_user_cpf">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="1">
       <widget class="QLabel" name="t_user_name">
        <property name="enabled">
@@ -62,8 +69,8 @@ background-image: url('path/to/your/image.png');</string>
        </property>
       </widget>
      </item>
-     <item row="11" column="1">
-      <widget class="QLineEdit" name="i_user_cpf">
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="i_user_name">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
@@ -91,8 +98,8 @@ background-image: none;</string>
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="i_user_name">
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="i_user_email">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
@@ -106,20 +113,6 @@ background-image: none;</string>
        </property>
        <property name="text">
         <string>Senha</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLineEdit" name="i_user_email">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <widget class="QLineEdit" name="i_user_password">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
       </widget>
      </item>
@@ -155,6 +148,13 @@ background-image: none;</string>
        </property>
       </spacer>
      </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="i_user_password">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
+       </property>
+      </widget>
+     </item>
      <item row="3" column="1">
       <spacer name="verticalSpacer">
        <property name="orientation">
@@ -170,6 +170,40 @@ background-image: none;</string>
         </size>
        </property>
       </spacer>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLabel" name="t_user_telefone">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 94, 0, 0);
+background-image: none;</string>
+       </property>
+       <property name="text">
+        <string>Telefone</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>30</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLineEdit" name="i_user_telefone">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
