@@ -39,16 +39,16 @@ background-image: url('path/to/your/image.png');</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>100</y>
-      <width>321</width>
-      <height>365</height>
+      <y>110</y>
+      <width>301</width>
+      <height>391</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <property name="sizeConstraint">
       <enum>QLayout::SetMaximumSize</enum>
      </property>
-     <item row="11" column="1">
+     <item row="14" column="1">
       <widget class="QLineEdit" name="i_user_cpf">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
@@ -87,7 +87,7 @@ background-image: none;</string>
        </property>
       </widget>
      </item>
-     <item row="10" column="1">
+     <item row="13" column="1">
       <widget class="QLabel" name="t_user_cpf">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 94, 0, 0);
@@ -171,7 +171,7 @@ background-image: none;</string>
        </property>
       </spacer>
      </item>
-     <item row="13" column="1">
+     <item row="16" column="1">
       <widget class="QLabel" name="t_user_telefone">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 94, 0, 0);
@@ -182,7 +182,7 @@ background-image: none;</string>
        </property>
       </widget>
      </item>
-     <item row="12" column="1">
+     <item row="15" column="1">
       <spacer name="verticalSpacer_4">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
@@ -198,12 +198,46 @@ background-image: none;</string>
        </property>
       </spacer>
      </item>
-     <item row="14" column="1">
+     <item row="17" column="1">
       <widget class="QLineEdit" name="i_user_telefone">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
       </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="i_user_confirm_password">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="t_user_confirm_password">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 94, 0, 0);
+background-image: none;</string>
+       </property>
+       <property name="text">
+        <string>Confirmar Senha</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>10</width>
+         <height>30</height>
+        </size>
+       </property>
+      </spacer>
      </item>
     </layout>
    </widget>
