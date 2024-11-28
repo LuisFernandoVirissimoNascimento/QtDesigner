@@ -10,5 +10,8 @@ class biblioteca:
     @staticmethod
     def update_user(id_usuario, nome, cpf, telefone, email, senha):
         controller_admin.update_user(id_usuario, nome, cpf, telefone, email, senha)
+    @staticmethod
+    def delete_user(id_usuario):
+        controller_admin.delete_user(id_usuario)
 
 biblioteca.__name__ = "blibioteca"
