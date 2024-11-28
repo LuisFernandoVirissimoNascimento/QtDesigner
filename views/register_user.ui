@@ -41,7 +41,7 @@ background-image: url('path/to/your/image.png');</string>
       <x>20</x>
       <y>110</y>
       <width>301</width>
-      <height>391</height>
+      <height>371</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
