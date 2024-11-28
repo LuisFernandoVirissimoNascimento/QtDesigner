@@ -74,14 +74,14 @@ background-image: none;</string>
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="i_rent_code">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="i_rent_email">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
