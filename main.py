@@ -7,7 +7,7 @@ login_file = "views/login_screen.ui"
 main_file = "views/main_screen.ui"
 rent_file = "views/register_rent.ui"
 user_file = "views/register_user.ui"
-book_file = "viewsregister_book.ui"
+book_file = "views/register_book.ui"
 
 
 
@@ -35,8 +35,8 @@ class MainWindow(QMainWindow):
         self.b_wolf.clicked.connect(self.load_main)
         self.b_load_main.clicked.connect(self.load_main)
 
-        self.b_register.clicked.connect(lambda : biblioteca.register_user(self.i_user_name.text(), self.i_user_cpf.text(), self.i_user_telefone.text(),self.i_user_email.text())) # This takes the input for user name and gives it's text, neat!
-        
+        self.b_register.clicked.connect(lambda : biblioteca.register_user(self.i_user_name.text(), self.i_user_cpf.text(), self.i_user_telefone.text(),self.i_user_email.text(),self.i_user_password.text(),self.i_user_confirm_password.text())) # This takes the input for user name and gives it's text, neat!
+
     def load_rent(self):
         uic.load_ui.loadUi(rent_file,self)
         self.b_wolf.clicked.connect(self.load_user)
