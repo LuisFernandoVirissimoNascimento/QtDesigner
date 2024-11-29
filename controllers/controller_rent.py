@@ -1,11 +1,11 @@
 from models.model_rent import rent
 from bd import database
-class controller_user:
+class controller_rent:
     @staticmethod
-    def create_rent(cod_livro,email):
-        rent_to_create = rent(cod_livro,email)
+    def create_rent(isbn,email):
+        rent_to_create = rent(isbn,email)
         data_base = database()
         data_base.execute_command(rent_to_create.create())
 
 
-controller_user.__name__ = "controller_user"
+controller_rent.__name__ = "controller_rent"

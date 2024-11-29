@@ -1,6 +1,6 @@
 class rent:
-    def __init__(self, cod_livro, email) -> None:
-        self.cod_livro = cod_livro
+    def __init__(self, isbn, email) -> None:
+        self.cod_livro = isbn # Se chama ISBN oficialmente, mas o banco de dados fica Cod_livro.
         self.email = email    
     
     def create(self):
