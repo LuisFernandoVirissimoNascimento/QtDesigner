@@ -24,3 +24,11 @@ class database:
         self.cursor.execute(command)
         self.conexao.commit()
         self.desconnect()
+
+    def read_command(self, command):
+        self.connect()
+        self.cursor.execute(command)
+        result = self.cursor.fetchall()
+        self.desconnect()
+        return result
+    
