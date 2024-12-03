@@ -219,6 +219,69 @@ background-image: a;</string>
      <string>Atualizar Usuário</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="b_load_read_book">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>601</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
+    </property>
+    <property name="text">
+     <string>Ver Livros</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_load_read_rent">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>601</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
+    </property>
+    <property name="text">
+     <string>Ver Empréstimos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_load_read_user">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>410</y>
+      <width>601</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
+    </property>
+    <property name="text">
+     <string>Ver Usuários</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
