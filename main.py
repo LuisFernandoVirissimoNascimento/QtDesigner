@@ -45,7 +45,9 @@ class MainWindow(QMainWindow):
         self.b_wolf.clicked.connect(self.load_main)
         self.b_load_main.clicked.connect(self.load_main)        
 
-        self.b_register.clicked.connect(lambda : biblioteca.update_user(self.i_user_confirm_password.text(),self.i_user_name.text(), self.i_user_cpf.text(), self.i_user_telefone.text(),self.i_user_email.text(),self.i_user_password.text())) # This takes the input for user name and gives it's text, neat!
+        self.b_update.clicked.connect(lambda : biblioteca.update_user(self.i_user_id.text(),self.i_user_name.text(), self.i_user_cpf.text(), self.i_user_telefone.text(),self.i_user_email.text(),self.i_user_password.text()))
+
+        self.b_delete.clicked.connect(lambda : biblioteca.delete_user(self.i_user_id.text()))
 
     def load_rent(self):
         uic.load_ui.loadUi(rent_file,self)
