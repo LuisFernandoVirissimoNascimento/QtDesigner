@@ -58,6 +58,10 @@ class MainWindow(QMainWindow):
         self.b_wolf.clicked.connect(self.load_rent)
         self.b_load_main.clicked.connect(self.load_main)
 
+        self.b_register.clicked.connect(lambda : biblioteca.create_book(self.i_titulo.text(),self.i_autor.text(),self.i_genero.text(),self.i_isbn.text()))
+        self.b_update.clicked.connect(lambda : biblioteca.update_book(self.i_titulo.text(),self.i_autor.text(),self.i_genero.text(),self.i_isbn.text()))
+        self.b_delete.clicked.connect(lambda : biblioteca.delete_book(self.i_isbn.text()))
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setWindowIcon(QIcon("bg.ico"))

@@ -9,3 +9,5 @@ select * from usuario;
 create table emprestimo(cod_livro int, email varchar(100));
 
 create table livro( titulo varchar(100), autor varchar(100), genero varchar(100), isbn varchar(50));
+
+select * from livro;

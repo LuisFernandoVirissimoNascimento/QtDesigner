@@ -21,5 +21,11 @@ class biblioteca:
     @staticmethod
     def create_book(titulo, autor, genero, isbn):
         controller_book.create_book(titulo, autor, genero, isbn)
+    @staticmethod
+    def update_book(titulo, autor, genero, isbn):
+        controller_book.update_book(titulo, autor, genero, isbn)
+    @staticmethod
+    def delete_book(isbn):
+        controller_book.delete_book(isbn)
 
 biblioteca.__name__ = "blibioteca"
