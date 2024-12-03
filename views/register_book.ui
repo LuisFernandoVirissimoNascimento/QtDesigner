@@ -63,7 +63,7 @@ background-image: url('path/to/your/image.png');</string>
       </widget>
      </item>
      <item row="11" column="1">
-      <widget class="QLineEdit" name="lineEdit_4">
+      <widget class="QLineEdit" name="i_status">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
@@ -92,7 +92,7 @@ background-image: none;</string>
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="i_titulo">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
@@ -110,7 +110,7 @@ background-image: none;</string>
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="i_autor">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
@@ -123,19 +123,19 @@ background-image: none;</string>
 background-image: url('path/to/your/image.png');</string>
        </property>
        <property name="text">
-        <string>Codigo</string>
+        <string>ISBN</string>
        </property>
       </widget>
      </item>
      <item row="8" column="1">
-      <widget class="QLineEdit" name="lineEdit_3">
+      <widget class="QLineEdit" name="i_genero">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
       </widget>
      </item>
      <item row="14" column="1">
-      <widget class="QLineEdit" name="lineEdit_5">
+      <widget class="QLineEdit" name="i_isbn">
        <property name="styleSheet">
         <string notr="true">background-color: rgba(158, 158, 158, 0.377);</string>
        </property>
@@ -209,12 +209,12 @@ background-image: url('path/to/your/image.png');</string>
     <zorder>Title</zorder>
     <zorder>label_4</zorder>
     <zorder>label_3</zorder>
-    <zorder>lineEdit</zorder>
-    <zorder>lineEdit_4</zorder>
+    <zorder>i_titulo</zorder>
+    <zorder>i_status</zorder>
     <zorder>label_2</zorder>
-    <zorder>lineEdit_2</zorder>
-    <zorder>lineEdit_3</zorder>
-    <zorder>lineEdit_5</zorder>
+    <zorder>i_autor</zorder>
+    <zorder>i_genero</zorder>
+    <zorder>i_isbn</zorder>
     <zorder>verticalSpacer</zorder>
     <zorder>verticalSpacer_2</zorder>
     <zorder>verticalSpacer_3</zorder>
