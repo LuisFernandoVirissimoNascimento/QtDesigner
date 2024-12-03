@@ -156,7 +156,7 @@ background-image: a;</string>
      <string>Atualizar</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QTableWidget" name="l_user">
     <property name="geometry">
      <rect>
       <x>20</x>
