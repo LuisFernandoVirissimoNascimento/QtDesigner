@@ -48,7 +48,7 @@ class MainWindow(QMainWindow):
         self.b_wolf.clicked.connect(self.load_main)
         self.b_load_main.clicked.connect(self.load_main)
 
-        self.b_register.clicked.connect(lambda : biblioteca.read_user(self)) # This takes the input for user name and gives it's text, neat!
+        self.b_update.clicked.connect(lambda : biblioteca.read_user(self)) # This takes the input for user name and gives it's text, neat!
 
     def load_update_user(self):
         uic.load_ui.loadUi(update_user_file,self)

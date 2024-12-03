@@ -1,6 +1,7 @@
 from controllers.controller_admin import controller_admin
 from controllers.controller_rent import controller_rent
 from controllers.controller_book import controller_book
+from PyQt6.QtWidgets import QWidget, QLineEdit, QPushButton, QMessageBox, QTableWidget, QTableWidgetItem
 
 class biblioteca:
     ########## User
@@ -21,13 +22,13 @@ class biblioteca:
     # 3 - Telefone
     # 4 - Email
     # 5 - Senha
-    def read_user(this, id_usuario):
-        data = controller_admin.read_user(id_usuario)
+    def read_user(this):
+        data = controller_admin.read_user()
         amount_rows = len(data)
         this.l_user.setRowCount(amount_rows)
         for i in range(len(data)):
             for j in range(len(data[i])):
-                this.l_user.setItem(i, j, j)
+                this.l_user.setItem(i, j, QTableWidgetItem(str(data[i][j])))
                 print(f"Index [{i}][{j}]: {data[i][j]}")
     @staticmethod
     def update_user(id_usuario, nome, cpf, telefone, email, senha):
